@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e8e8e8;
+}
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+h1,
+h4 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+input {
+  margin: 5px 0;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid lightgrey;
+}
+
+
+.container {
+  text-align: left;
+  margin: 20px 0 40px 40px;
+}
+
+.title {
+  font-weight: 800;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+hr {
+  background-color: black;
+}
+
+.mainContainer {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+ul {
+  list-style: none;
+}
+
+.button {
+  display: flex;
+}
+
+.btn {
+  text-align: right;
+}
+
+.Wrapper {
+  border: 1px solid white;
+  margin: 50px;
+  background-color: white;
+  padding: 30px;
+}
+
+.cartbuttons {
+  background-color: #12aafd;
+  padding: 12px;
+  border: 1px solid white;
+  border-radius: 7px;
+  color: white;
+}
+
+#delete {
+  background-color: red;
+}
+
+.list {
+  margin-bottom: 25px;
+  input {
+    margin-right: 25px;
+    width: 180px;
+  }
+  textarea {
+    height: 45px;
+    width: 120px;
+    margin-right: 25px;
+  }
+}
+
+hr {
+  margin: 16px 0;
+}
+
+.products {
+  &__title {
+    font-weight: 700;
+  }
+}
