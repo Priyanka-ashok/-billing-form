@@ -1,80 +1,65 @@
-export const data = {
-  "First Name": "Priyanka",
-  "Last Name": "Ashok",
-  "Address line 1": "# 4th Cross Konena Agrahara",
-  "Address line 2": "Murgeshpalya",
-  City: "Bangalore",
-  State: "Karnataka",
-  Zipcode: "560017",
-  Country: "India",
+export const form = {
+  billingdata: {
+    "First Name": "Priyanka",
+    "Last Name": "Ashok",
+    "Address line 1": "abc",
+    "Address line 2": "xyz",
+    City: "Bangalore",
+    State: "Karnataka",
+    Zipcode: "560015",
+    Country: "India",
+    type: "billingAddress"
+  },
+  
+  shippingdata: {
+    "First Name": "Priyanka Ashok ",
+    "Last Name": "Ashok ",
+    "Address line 1": "Cross",
+    "Address line 2": "rsq",
+    City: "Bangalore",
+    State: "Karnataka",
+    Zipcode: "560010",
+    Country: "India",
+    type: "shippingAddress"
+  },
+  productsDetails : [
+    {
+      productId: "12344",
+      productName: "Dinning Table",
+      qty: "3",
+      unitPrice: "6"
+    },
+    {
+      productId: "12343",
+      productName: "Tv Stand",
+      qty: "1",
+      unitPrice: "6"
+    }
+  ]
 };
 
-export const shippingdata = {
-  "First Name": "Priyanka",
-  "Last Name": "Ashok",
-  "Address line 1": "# 4th Cross Konena Agrahara",
-  "Address line 2": "Murgeshpalya",
-  City: "Bangalore",
-  State: "Karnataka",
-  Zipcode: "560017",
-  Country: "India",
-};
-
-export const ProductsData = [
+export const productsName = [
   {
-    name: "Product ID",
-    productsList: [
-      {
-        Name: "10040",
-      }
-    ]
+    name: "Product ID"
   },
   {
-    name: "Product Name",
-    productsList: [
-      {
-        Name: "Dinning Table Set ( 4 set )"
-      }
-    ]
+    name: "Product Name"
   },
   {
-    name: "QTY",
-    productsList: [
-      {
-        Name: "3"
-      }
-    ]
+    name: "QTY"
   },
   {
-    name: "Unit Price",
-    productsList: [
-      {
-        Name: "1234"
-      }
-    ]
+    name: "Unit Price"
   },
   {
-    name: "Total Price",
-    productsList: [
-      {
-        Name: ""
-      }
-    ]
+    name: "Total Price"
   },
   {
-    name: "Notes",
-    productsList: [
-      {
-        Name: ""
-      }
-    ]
+    name: "Notes"
   },
   {
-    name: "-",
-    productsList: [
-      {
-        Name: ""
-      }
-    ]
+    name: "-"
   }
 ];
+
+

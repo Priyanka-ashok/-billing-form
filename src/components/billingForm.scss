@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   background-color: #e8e8e8;
 }
@@ -22,93 +21,119 @@ h4 {
   vertical-align: baseline;
 }
 
-#form {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-}
-input {
-  margin: 5px 0;
-  padding: 5px;
-  font-size: 18px;
-  border: 1px solid lightgrey;
-}
-
-
-.container {
-  text-align: left;
-  margin: 20px 0 40px 40px;
-}
-
 .title {
   font-weight: 800;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  &__fields {
+    margin: 5px 0;
+    padding: 7px;
+    font-size: 18px;
+    border: 1px solid lightgrey;
+  }
+}
+
+.main {
+  text-align: center;
+  display: flex;
+  margin: 50px;
+  background-color: white;
+  &__container {
+    text-align: left;
+    margin: 20px 0 40px 40px;
+  }
+}
+
 .flex {
   display: flex;
 }
 
-hr {
-  background-color: black;
-}
 
 .mainContainer {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
+  box-shadow: 0 3px 0px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.06);
+  padding: 20px 0;
 }
 
-ul {
-  list-style: none;
-}
-
-.button {
-  display: flex;
-}
-
-.btn {
-  text-align: right;
-}
-
-.Wrapper {
-  border: 1px solid white;
+.product {
   margin: 50px;
   background-color: white;
   padding: 30px;
-}
-
-.cartbuttons {
-  background-color: #12aafd;
-  padding: 12px;
-  border: 1px solid white;
-  border-radius: 7px;
-  color: white;
+  .btn {
+    text-align: right;
+  }  
+  &__cartbuttons {
+    background-color: #12aafd;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 7px;
+    color: white;
+    font-size: 16px;
+    margin-top: 30px;
+  }
 }
 
 #delete {
   background-color: red;
+  width: 115px;
+  margin-top: 0;
 }
 
-.list {
+.productsList {
+  &__title {
+    font-weight: 700;
+  }
+}
+
+#list {
   margin-bottom: 25px;
   input {
     margin-right: 25px;
     width: 180px;
+    font-size: 18px;
+    padding: 10px;
   }
   textarea {
     height: 45px;
     width: 120px;
     margin-right: 25px;
+    font-size: 18px;
   }
 }
 
-hr {
-  margin: 16px 0;
+.date_container {
+  display: flex;
+  flex-direction: column;
 }
 
-.products {
-  &__title {
-    font-weight: 700;
-  }
+.main {
+  text-align: center;
+  display: flex;
+  margin: 50px;
+  background-color: white;
+}
+
+#calender-icon::before {
+  content: "";
+  position: relative;
+  left: 127px;
+  top: -28px;
+}
+
+.react-datepicker__input-container input {
+  width: 168px;
+  font-size: 14px;
+  padding: 10px;
+  position: relative;
+}
+
+.react-datepicker__input-container input::placeholder {
+  font-size: 20px;
 }
